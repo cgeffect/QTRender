@@ -1,0 +1,18 @@
+project("qt3d")
+cmake_minimum_required(VERSION 3.16)
+
+if(CMAKE_SYSTEM_NAME MATCHES "Darwin")
+    set(CMAKE_PREFIX_PATH /usr/local/Cellar/qt/6.9.1)
+endif()
+
+add_subdirectory(3d-text)
+add_subdirectory(basicshapes-cpp)
+add_subdirectory(controls)
+add_subdirectory(instanced-arrays-qml)
+add_subdirectory(lights)
+add_subdirectory(multiviewport)
+add_subdirectory(pbr-materials)
+add_subdirectory(simple-cpp)
+add_subdirectory(simple-qml)
+add_subdirectory(simplecustommaterial)
+add_subdirectory(wireframe)
